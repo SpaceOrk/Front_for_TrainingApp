@@ -1,0 +1,26 @@
+@import 'src/assets/styles/variables';
+
+.input {
+	background-color: rgb(123, 212, 253);
+	border: 1px solid transparent;
+	color: $black;
+	font-size: 18px;
+	padding: 14px;
+	border-radius: 10px;
+	margin-bottom: 0.7rem;
+	outline: none;
+	width: 100%;
+
+	&:focus {
+		border-color: rgba($accent, 0.3);
+	}
+
+	&::placeholder {
+		color: #1d4bad;
+	}
+}
+
+.error {
+	color: #38eaf1;
+	font-size: 1rem;
+}
