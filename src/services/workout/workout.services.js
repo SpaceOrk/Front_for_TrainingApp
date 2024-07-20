@@ -1,5 +1,5 @@
 import { $axios } from '../../api.js'
-const WORKOUT = '/workouts'
+export const WORKOUT = '/workouts'
 
 class WorkoutServices {
 	async getAll() {
