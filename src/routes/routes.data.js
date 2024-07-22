@@ -4,7 +4,8 @@ import { NewWorkout } from '../components/screens/new-workout/NewWorkout.jsx'
 import { Profile } from '../components/screens/profile/Profile.jsx'
 import NewExercise from '../components/screens/new-exercise/NewExercise.jsx'
 import Workout from '../components/screens/new-workout/workout/Workout.jsx'
-import { ListWorkout } from '../components/screens/new-workout/workout/ListWorkout.jsx'
+import ListWorkout from '../components/screens/new-workout/workout/list/ListWorkout.jsx'
+import ExerciseLog from '../components/screens/exercise-log/ExerciseLog.jsx'
 export const routes = [
 	{
 		path: '/auth',
@@ -34,21 +35,17 @@ export const routes = [
 
 	{
 		path: '/workout/:id',
-
 		component: Workout,
 		IsAuth: true
 	},
 	{
 		path: '/workouts',
-
 		component: ListWorkout,
 		IsAuth: true
-	}
-	/*
+	},
 	{
 		path: '/exercise/:id',
-
-		component: SingleExercise,
-		IsAuth: true,
-	}, */
+		component: ExerciseLog,
+		IsAuth: true
+	}
 ]

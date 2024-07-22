@@ -12,4 +12,5 @@
 - React select
 - Axios
 - React icon
+- Sass
 
